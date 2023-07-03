@@ -35,6 +35,7 @@ Dit project is gemaakt door:
 - Yamairo Martinus
 - Sebastiaan Valkenhoff
 - Ilayda Alan
+
 We hebben samengewerkt om de verschillende componenten van de wasmachinesimulatie te implementeren en te integreren in een werkend geheel.
 
 Feedback en verbeteringen
