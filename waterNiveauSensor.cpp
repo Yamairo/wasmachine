@@ -3,9 +3,10 @@
 //
 
 #include "waterNiveauSensor.h"
-
+#include <iostream>
+using namespace  std;
 waterNiveauSensor::waterNiveauSensor() {
-
+    cout<<"Sensor aangemaakt"<<endl;
 }
 
 waterNiveauSensor::~waterNiveauSensor() {

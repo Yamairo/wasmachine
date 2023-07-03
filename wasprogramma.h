@@ -13,14 +13,16 @@ class wasprogramma {
 private:
     int temperatuur;
     int toeren;
-    trommel t1(int, waterNiveauSensor* wNS);
-    waterNiveauRegelaar wNR(waterNiveauSensor* wNS);
+    waterNiveauSensor* wNS;
+    waterNiveauRegelaar* wNR;
+    trommel* t1;
 public:
-    wasprogramma(int, int);
+    wasprogramma(int temperatuur, int toeren);
     ~wasprogramma();
     void start();
-    waterNiveauSensor *wNS;
 };
+
+
 
 
 #endif //WASMACHINE_WASPROGRAMMA_H

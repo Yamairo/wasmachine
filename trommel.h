@@ -17,6 +17,7 @@ public:
 private:
     int maxToeren;
     int toeren = 0;
+    waterNiveauSensor* wNS;
 };
 
 

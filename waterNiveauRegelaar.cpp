@@ -5,6 +5,7 @@
 #include "waterNiveauRegelaar.h"
 
 waterNiveauRegelaar::waterNiveauRegelaar(waterNiveauSensor* sensor):wNS(sensor) {
+    cout<<"Waterniveau regelaar aangemaakt"<<endl;
 }
 
 waterNiveauRegelaar::~waterNiveauRegelaar(){}
@@ -21,8 +22,8 @@ void waterNiveauRegelaar::zetKraanAan() {
 
 void waterNiveauRegelaar::zetPompAan() {
     if(wNS->waterniveau != 0){
-        cout<<"legen \nHet waterniveau is " + to_string(wNS->geefWaterNiveau())<<endl;
         wNS->waterniveau -= 1;
+        cout<<"legen \nHet waterniveau is " + to_string(wNS->geefWaterNiveau())<<endl;
     }
 }
 
