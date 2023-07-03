@@ -14,6 +14,8 @@ public:
     trommel(int, waterNiveauSensor* wNS);
     ~trommel();
     void draaien();
+    void remAf();
+    bool centrifugeert = false;
 private:
     int maxToeren;
     int toeren = 0;

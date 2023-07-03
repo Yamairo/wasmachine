@@ -12,7 +12,7 @@ trommel::~trommel() {
 }
 
 void trommel::draaien() {
-    if (wNS->geefWaterNiveau() == wNS->maxWaterNiveau) {
+    if ((wNS->geefWaterNiveau() == wNS->maxWaterNiveau) or centrifugeert) {
         cout << "de trommel draait met " + to_string(toeren) + " toeren" << endl;
         if(toeren < maxToeren){
             toeren += 10;
@@ -21,5 +21,11 @@ void trommel::draaien() {
             toeren -= 1;
         }
     }
-//    cout << to_string(wNS->waterniveau) << endl;
+}
+
+void trommel::remAf() {
+    if(toeren > 0){
+        toeren -= 10;
+        cout << "de trommel draait met " + to_string(toeren) + " toeren" << endl;
+    }
 }

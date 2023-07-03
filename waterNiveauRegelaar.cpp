@@ -11,7 +11,7 @@ waterNiveauRegelaar::waterNiveauRegelaar(waterNiveauSensor* sensor):wNS(sensor) 
 waterNiveauRegelaar::~waterNiveauRegelaar(){}
 
 void waterNiveauRegelaar::zetKraanAan() {
-    if(wNS->waterniveau < wNS->maxWaterNiveau){
+    if(wNS->geefWaterNiveau() < wNS->maxWaterNiveau){
         cout<<"vullen \nHet waterniveau is " + to_string(wNS->geefWaterNiveau())<<endl;
         wNS->waterniveau += 1;
     }
@@ -21,7 +21,7 @@ void waterNiveauRegelaar::zetKraanAan() {
 }
 
 void waterNiveauRegelaar::zetPompAan() {
-    if(wNS->waterniveau != 0){
+    if(wNS->geefWaterNiveau() != 0){
         wNS->waterniveau -= 1;
         cout<<"legen \nHet waterniveau is " + to_string(wNS->geefWaterNiveau())<<endl;
     }

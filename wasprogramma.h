@@ -7,19 +7,22 @@
 #include "waterNiveauRegelaar.h"
 #include "waterNiveauSensor.h"
 #include "trommel.h"
+#include "verwarmingselement.h"
 #include<unistd.h>
 
 class wasprogramma {
 private:
-    int temperatuur;
-    int toeren;
     waterNiveauSensor* wNS;
     waterNiveauRegelaar* wNR;
     trommel* t1;
+    trommel* tCentrifuge;
+    verwarmingselement* v1;
 public:
-    wasprogramma(int temperatuur, int toeren);
+    wasprogramma(int, int);
     ~wasprogramma();
     void start();
+    void wassen();
+    void centrifugeren();
 };
 
 
