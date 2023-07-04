@@ -12,7 +12,7 @@ waterNiveauRegelaar::~waterNiveauRegelaar(){}
 
 void waterNiveauRegelaar::zetKraanAan() {
     if(wNS->geefWaterNiveau() < wNS->maxWaterNiveau){
-        cout<<"vullen \nHet waterniveau is " + to_string(wNS->geefWaterNiveau())<<endl;
+        cout<<"Het waterniveau is " + to_string(wNS->geefWaterNiveau())<<endl;
         wNS->waterniveau += 1;
     }
     else{
@@ -23,7 +23,7 @@ void waterNiveauRegelaar::zetKraanAan() {
 void waterNiveauRegelaar::zetPompAan() {
     if(wNS->geefWaterNiveau() != 0){
         wNS->waterniveau -= 1;
-        cout<<"legen \nHet waterniveau is " + to_string(wNS->geefWaterNiveau())<<endl;
+        cout<<"Het waterniveau is " + to_string(wNS->geefWaterNiveau())<<endl;
     }
 }
 

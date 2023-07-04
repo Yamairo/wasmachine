@@ -16,7 +16,7 @@ void verwarmingselement::verwarmen() {
     if (wNS->geefWaterNiveau() == wNS->maxWaterNiveau) {
         cout << "Het verwarmingselement is nu " + to_string(temperatuur) + "\370C" << endl;
         if(temperatuur < maxTemperatuur){
-            temperatuur += 5;
+            temperatuur += 1;
         }
         else if(temperatuur > maxTemperatuur){
             temperatuur -= 1;
