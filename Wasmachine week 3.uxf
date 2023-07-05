@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>511</y>
+      <w>189</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>waterNiveauSensor
+--
++ waterniveau : int
++ maxWaterniveau : int
+--
++ waterNiveauSensor()
++ ~waterNiveauSensor()
++ geefWaterniveau() const : int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>525</x>
+      <y>28</y>
+      <w>147</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>WasProgramma
+--
+waterNiveauSensor* wNS
+waterNiveauRegelaar* wNR;
+trommel* t1
+trommel* tCentrifuge
+verwarmingselememt
+--
++ wasprogramma(int, int)
++ ~wasprogramma()
++ start() : void
++ wassen() : void 
++ centrifugeren() : void
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>511</y>
+      <w>189</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Trommel
+--
+- toeren : int
+- maxToeren : int
+- waterniveauSensor* wNS
+--
++ draaien(int toeren) : void
++ instellenToeren() : int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>707</x>
+      <y>511</y>
+      <w>245</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Verwarmingselement
+--
+- temperatuur : int
+- maxTemperatuur : int
+- wateNiveauSensor* wNS
+--
++ verwarmingselement(int, waterNiveauSensor* wNS)
++ ~verwarmingselement()
++ verwarmen() : void
++ afkoelen() : void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>511</y>
+      <w>266</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>WaterNiveauRegelaar
+--
+- wateNiveauSensor* wNS
+--
++ waterNiveauRegelaar(wateNiveauSensor*)
++ waterNiveauRegelaar()
++ zetKraanAan() : void
++ zetPompAan() : void
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>182</y>
+      <w>301</w>
+      <h>343</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+gebruikt</panel_attributes>
+    <additional_attributes>410.0;10.0;10.0;470.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>182</y>
+      <w>63</w>
+      <h>343</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+gebruikt</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;470.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>595</x>
+      <y>182</y>
+      <w>245</w>
+      <h>343</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+gebruikt</panel_attributes>
+    <additional_attributes>10.0;10.0;330.0;470.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>609</x>
+      <y>182</y>
+      <w>476</w>
+      <h>343</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+gebruikt</panel_attributes>
+    <additional_attributes>10.0;10.0;660.0;470.0</additional_attributes>
+  </element>
+</diagram>

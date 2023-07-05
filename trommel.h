@@ -16,9 +16,9 @@ public:
     void draaien();
     void remAf();
     bool centrifugeert = false;
+    int toeren = 0;
 private:
     int maxToeren;
-    int toeren = 0;
     waterNiveauSensor* wNS;
 };
 
