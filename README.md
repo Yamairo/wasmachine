@@ -1,5 +1,5 @@
 # Wasmachine - Practicum 5 Modelleren
-Dit project is gemaakt als onderdeel van Practicum 5 voor het vak Modelleren. De wasmachine simulatie is ontwikkeld door Yamairo Martinus, Sebastiaan Valkenhoff en Ilayda. Het doel van het project was om een eenvoudige wasmachinesimulatie te creëren met behulp van objectgeoriënteerd programmeren.
+Dit project is gemaakt als onderdeel van Practicum 5 voor het vak Modelleren. De wasmachine simulatie is ontwikkeld door Yamairo Martinus, Sebastiaan Valkenhoff. Het doel van het project was om een eenvoudige wasmachinesimulatie te creëren met behulp van objectgeoriënteerd programmeren.
 
 # Bestandsstructuur
 Het project bestaat uit de volgende bestanden:
@@ -34,7 +34,6 @@ Dit project is gemaakt door:
 
 - Yamairo Martinus
 - Sebastiaan Valkenhoff
-- Ilayda Alan
 
 We hebben samengewerkt om de verschillende componenten van de wasmachinesimulatie te implementeren en te integreren in een werkend geheel.
 
